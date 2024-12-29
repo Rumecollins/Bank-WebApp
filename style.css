@@ -1,0 +1,81 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+</style>
+
+/* RESET */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea{
+    font-size: inherit;
+}
+
+/* CSS VARIABLE */
+:root{
+    /* color */
+    --BG-COLOR:hsl(220, 16%, 96%);
+    --BG-COLOR-FADE:hsl(0, 0%, 98%);
+    --BG-HEADER:hsl(0, 0%, 100%);
+    --BG-FOOTER:hsl(233, 26%, 24%);
+    --BG-BTN:hsl(136, 65%, 51%);
+    --BG-BTN-IMAGE:linear-gradient(to left,var(--BG-BTN),var(--COLOR-FOOTER) );
+    --BG-IMAGE:linear-gradient(to bottom,var(--BG-COLOR), var(--BG-COLOR-FADE));
+    --COLOR-HEADING:hsl(233, 26%, 24%);
+    --COLOR-BODY:hsl(233, 8%, 62%);
+    --COLOR-FOOTER:hsl(192, 70%, 51%);
+
+    /* FONT */
+    --F-F: "Sansita", serif;
+    --F-S: clamp(1rem, 2.5vh, 1.5rem);
+
+    /* PADDING */
+    --PADDING-BLOCK: 0.5em;
+    --PADDING-SIDES: 2.5%
+
+    /* MARGIN */
+}
+
+/* Utility Class */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.center{
+    text-align: center;
+}
+
+/* General Styling */
+html{
+    scroll-behavior: smooth;
+    font-family: var(--F-F);
+    font-size: var(--F-S);
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:var(--BG-COLOR);
+    background-image: var(--BG-IMAGE);
+}
+
+h1,
+h2,
+h3{
+    color: var(--COLOR-HEADING);
+    letter-spacing: 0.05em;
+}
+
