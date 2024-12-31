@@ -7,11 +7,11 @@
     <title>Easy Bank web app</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header_nav">
             <img src="./images/logo.svg" alt="logo">
-            <img src="./images/icon-hamburger.svg" alt="hamburger icon">
-            <ul>
+            <img src="./images/icon-hamburger.svg" alt="hamburger icon" width="24" height="11">
+            <ul class="header_ul">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
@@ -22,31 +22,31 @@
     </header>
 
     <section class="hero">
-        <div>
+        <div class="hero_img">
             <img src="./images/image-mockups.png" alt="">
         </div>
-        <div>
-            <h1>
+        <div class="hero_texts">
+            <h1 class="hero_h1">
                 Next generation digital banking
             </h1>
-            <p>
+            <p class="hero_p">
                 Take your financial life online. Your Easybank account will be a one-stop-shop 
                 for spending, saving, budgeting, investing, and much more.
             </p>
-            <button>Request Invite</button>
+            <button class="btn">Request Invite</button>
         </div>
     </section>
     
-    <main>
-        <section>
-            <h2>
+    <main class="main">
+        <section class="main_section center">
+            <h2 class="main_h2">
                 Why choose Easybank?
             </h2>
-            <p>
+            <p class="main_p">
                 We leverage Open Banking to turn your bank account into your financial hub. Control 
                 your finances like never before.
             </p>
-            <div>
+            <div class="main_div">
                 <div>
                     <img src="./images/icon-budgeting.svg" alt="budgeting icon">
                     <h3>Online Banking</h3>
@@ -80,83 +80,86 @@
                     </p>
                 </div>
             </div>
-        </section>
-            <h2>
+        </section >
+        <section class="main_section">
+            <h2 class="main_h2">
                 Latest Articles
             </h2>
-            <div>
-                <img src="./images/image-currency.jpg" alt="">
-                <p>By Claire Robinson</p>
-                <h4>Receive money in any currency with no fees</h4>
-                <p>
-                    The world is getting smaller and we’re becoming more mobile. So why should you be 
-                    forced to only receive money in a single …
-                </p>
-            </div>
-
-            <div>
-                <img src="./images/image-restaurant.jpg" alt="">
-                <p>By Wilson Hutton</p>
-                <h4>Treat yourself without worrying about money</h4>
-                <p>
-                    Our simple budgeting feature allows you to separate out your spending and set 
-                    realistic limits each month. That means you …
-                </p>
-            </div>
-
-            <div>
-                <img src="./images/image-plane.jpg" alt="">
-                <p>By Wilson Hutton</p>
-                <h4>  Take your Easybank card wherever you go </h4>
-                <p>
-                    We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-                    while you’re abroad. We’ll even show you …
-                </p>
-            </div>
-
-            <div>
-                <img src="./images/image-confetti.jpg" alt="">
-                <p>By Claire Robinson</p>
-                <h4> Our invite-only Beta accounts are now live! </h4>
-                <p>
-                    After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-                    It’s easy to request an invite through the site ...
-                </p>
-            </div>
-    </main>
-    <footer>
-        <div>
-            <div>
-                <img src="./images/logo.svg" alt="logo">
+            <div class="main_div">
                 <div>
+                    <img src="./images/image-currency.jpg" alt="">
+                    <p>By Claire Robinson</p>
+                    <h4>Receive money in any currency with no fees</h4>
+                    <p>
+                        The world is getting smaller and we’re becoming more mobile. So why should you be 
+                        forced to only receive money in a single …
+                    </p>
+                </div>
+    
+                <div>
+                    <img src="./images/image-restaurant.jpg" alt="">
+                    <p>By Wilson Hutton</p>
+                    <h4>Treat yourself without worrying about money</h4>
+                    <p>
+                        Our simple budgeting feature allows you to separate out your spending and set 
+                        realistic limits each month. That means you …
+                    </p>
+                </div>
+    
+                <div>
+                    <img src="./images/image-plane.jpg" alt="">
+                    <p>By Wilson Hutton</p>
+                    <h4>  Take your Easybank card wherever you go </h4>
+                    <p>
+                        We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+                        while you’re abroad. We’ll even show you …
+                    </p>
+                </div>
+    
+                <div>
+                    <img src="./images/image-confetti.jpg" alt="">
+                    <p>By Claire Robinson</p>
+                    <h4> Our invite-only Beta accounts are now live! </h4>
+                    <p>
+                        After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+                        It’s easy to request an invite through the site ...
+                    </p>
+                </div>
+            </div>
+        </section>  
+    </main>
+    <footer class="footer">
+        <div class="footer_first_child">
+            <div>
+                <img class="footer_logo" src="./images/logo - Copy.svg" alt="logo">
+                <div class= "footer_icon">
                     <img src="./images/icon-facebook.svg" alt="facebook icon">
-                    <img src="./images/youtube.svg" alt="youtube icon">
+                    <img src="./images/icon-youtube.svg" alt="youtube icon">
                     <img src="./images/icon-twitter.svg" alt="twitter icon">
                     <img src="./images/icon-pinterest.svg" alt="pinterest icon">
                     <img src="./images/icon-instagram.svg" alt="instagram icon">
                 </div>
             </div>
 
-            <ul>
-                <div>
+            <ul class="footer_ul">
+                <span>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Blog</a></li>
-                </div>
-                <div>
+                </span>
+                <span>
                     <li><a href="">Careers</a></li>
                     <li><a href="">Support</a></li>
                     <li><a href="">Privacy Policy</a></li>
-                </div>
+                </span>
             </ul>
 
         </div>
 
-        <div>
-            <button>Request Invite</button>
+        <div class="footer_second_child">
+            <button class="btn">Request Invite</button>
         </div>
-        <p> © Easybank. All Rights Reserved</p>
+        <p class="footer_last_child"> © Easybank. All Rights Reserved</p>
     </footer>
-   
 </body>
 </html>
