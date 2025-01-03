@@ -48,7 +48,7 @@ textarea{
     /* MARGIN */
     --MARGIN-BLOCK: 1em;
     --MARGIN-SIDES: 8%;
-    --MARGIN-TOP: -8em;
+    --MARGIN-TOP: -5em;
 }
 
 /* Utility Class */
@@ -61,6 +61,12 @@ textarea{
     text-align: center;
 }
 
+.center-children{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 /* General Styling */
 html{
     scroll-behavior: smooth;
@@ -131,25 +137,19 @@ section{
     background-image: url(./images/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:center;
-    margin: var(--MARGIN-TOP) auto 2em;
+    background-position:top;
 }
 .hero_img{
     margin-top: var(--MARGIN-TOP);
 }
 .hero_texts{
-    margin-top: 8em;
     text-align: center;
+    margin-top: var(--MARGIN-TOP);
 }
-
 .main_section:first-child{
     background-color: var(--BG-COLOR);
-}
-.align-children{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    margin-inline: 0;
+    padding-inline: 20%;
 }
 .main_div> div  * {
     padding-bottom: 0.8em ;
@@ -202,14 +202,110 @@ section{
     border: none;
 }
 
-@media screen and (min-width:567px) {
+
+
+
+
+/* SMALL */
+@media screen and (min-width:35em) {
+
+    :root{
+        --F-S: clamp(1rem, 2.5vh,1.5rem);
+        --F-S-HEADING:clamp(1.6rem, 3vh, 2.5rem);
+    
+        /* PADDING */
+        --PADDING-SIDES: 15%;   
+        
+        /* MARGIN */
+        --MARGIN-SIDES: 20%;
+    }
+/* GENERAL STYLING */
+    h1{
+        padding-top:6em ;
+    }
+
+    .main_section:first-child{
+        padding-inline: 20%;
+    }
+    
+}
+
+/* MEDIUM */
+@media screen and (min-width:45em) {
+    :root{
+        /* PADDING */
+        --PADDING-SIDES: 5%;   
+        
+        /* MARGIN */
+        --MARGIN-SIDES: 5%;
+    }
+    /* GENERAL STYLING */
+    h4{
+        width: 25ch;
+    }
+
+    .main_div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main_div> div{
+        margin-inline:auto ;
+        padding: 1em;
+        width: min(100%, 300px);
+    }
+    .main_section:first-child{
+        padding-inline: 5%;
+    }
+    .hero_p,
+    .main_p{
+        width: 60ch;
+        align-items: center;
+        margin-inline:auto ;
+    }
+}
+
+/* LARGE  */
+@media screen and (min-width:56em) {
+     /* HEADER */
+     .header_nav{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    /* HERO */
+    .hero{
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-position: right center;
+        display: flex;
+    }
+    .hero_texts{
+        order: -1;
+    }
+    .hero_texts
+    {
+        width: 40ch;
+        text-align: left;
+    }
+    .hero_p{
+        width: 80%;
+        margin-right: 20em;
+    }
+    .main_div> div{
+        width: min(100%, 280px);
+    }
+ 
+}
+
+/* EXTRA LARGE */
+@media screen and (min-width:67em) {
     :root{
         /* FONT */
-    --F-S: clamp(1.3rem, 3vh,1.8rem);
     --F-S-HEADING:clamp(2rem, 4vh, 2.5rem);
 
     /* COLOR */
-    --BG-COLOR:BLACK;
+    
 
     /* PADDING */
     --PADDING-BLOCK: 1em;
@@ -218,7 +314,16 @@ section{
     /* MARGIN */
     --MARGIN-BLOCK: 1em;
     --MARGIN-SIDES: 8%;
-    --MARGIN-TOP: -8em;
+    --MARGIN-TOP : 0;
+    
+    
+    }
+
+    h1{
+        font-size: clamp(2.5rem, 4vh, 3.5rem);
+    }
+    .hero_texts{
+        width: 60ch;
     }
 
 }
