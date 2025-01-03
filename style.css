@@ -208,6 +208,9 @@ section{
     --F-S: clamp(1.3rem, 3vh,1.8rem);
     --F-S-HEADING:clamp(2rem, 4vh, 2.5rem);
 
+    /* COLOR */
+    --BG-COLOR:BLACK;
+
     /* PADDING */
     --PADDING-BLOCK: 1em;
     --PADDING-SIDES: 5%;
@@ -218,7 +221,4 @@ section{
     --MARGIN-TOP: -8em;
     }
 
-    body{
-        background-color: black;
-    }
 }
