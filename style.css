@@ -145,7 +145,7 @@ section{
 .main_section:first-child{
     background-color: var(--BG-COLOR);
 }
-.align-children{
+.center-children{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
