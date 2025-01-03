@@ -86,7 +86,15 @@ h4{
     letter-spacing: 0.05em;
 }
 h1{
+    padding-top: 4em;
     font-size: clamp(2.2rem, 4vh, 3rem);
+}
+h1,
+h2{
+    padding-bottom: 1em;
+}
+h4{
+    width: 30ch;
 }
 section{
     padding-bottom: 3em;
@@ -136,6 +144,15 @@ section{
 
 .main_section:first-child{
     background-color: var(--BG-COLOR);
+}
+.align-children{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main_div> div  * {
+    padding-bottom: 0.8em ;
 }
 
 .footer{
@@ -199,5 +216,9 @@ section{
     --MARGIN-BLOCK: 1em;
     --MARGIN-SIDES: 8%;
     --MARGIN-TOP: -8em;
+    }
+
+    body{
+        background-color: black;
     }
 }
